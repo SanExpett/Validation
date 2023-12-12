@@ -25,7 +25,9 @@ class MainActivity : AppCompatActivity() {
                 var number = numbers[i].digitToInt()
                 if ((i+1) % 2 == parity) {
                     number *= 2
-                    if (number > 9) number -= 9
+                    if (number > 9) {
+                        number -= 9
+                    }
                 }
 
                 sum += number
